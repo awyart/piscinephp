@@ -1,0 +1,94 @@
+h1
+{
+	color :blue;
+	font-size: 1.6vw;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+}
+
+h2 
+{
+	color :white;
+	font-size: 1.6vw;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 35px;
+}
+
+h4 
+{
+	color :152E8A;
+	font-size: 0.8vw;
+	font-weight: normal;
+	text-align: right;
+	margin-top: 0px;
+}
+
+h3 
+{
+	color :blue;
+	font-size: 1vw;
+	font-weight: normal;
+	text-align: left;
+	margin-top: 0px;
+}
+
+.elmt
+{
+	float: left;
+	width:5%;
+	height: 90px; 
+	border: 2px inset;
+	border-color: black;
+}
+
+.elmt1
+{
+	float: left;
+	width:5%;
+	height: 90px; 
+	border: 2px dotted;
+	border-color: black;
+}
+
+.elmt2
+{
+	float: left;
+	width:5%;
+	height: 90px; 
+	border: 2px dashed;
+	border-color: black;
+}
+
+.head
+{
+	float: left;
+	width:5%;
+	height:90px; 
+	border: 2px solid;
+	border-color: 050E2F;
+}
+
+.empty
+{
+	visibility: hidden;
+	float: left;
+	width: 5%;
+	height: 90px; 
+	border: 2px solid red;
+}
+
+.saut1 
+{
+	float: left;
+	width:100%;
+	height: 20px; 
+}
+
+.saut2 
+{
+	float: left;
+	width:100%;
+	height: 2px; 
+}

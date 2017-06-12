@@ -1,0 +1,173 @@
+span
+{
+	text-shadow: 8px 8px 15px #000;
+}
+.d42
+{
+	position: absolute;
+	background-color: #909090;
+	width : 1800px;
+	top : 20px;
+	left: 50%;
+	margin-left: -900px;
+	border-radius : 15px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#titre
+{
+	margin: 20px;
+	width : 650px;
+}
+
+#reload
+{
+	position : absolute;
+	height : 30px;
+	width : 30px;
+	top : 0px;
+	left: 1750px;
+	margin : 10px;
+	z-index: 2;
+}
+#loupe
+{
+	position : absolute;
+	width : 420px;
+	top : 10px;
+	left: 1320px;
+	z-index: 3;
+}
+
+#close
+{
+	position : absolute;
+	height : 30px;
+	width : 30px;
+	top : 160px;
+	left: 1750px;
+	margin: 10px;
+	z-index: 3;
+}
+
+.cluster
+{
+	position: absolute;
+	background-color: #909090;
+	width : 1230px;
+	top : 260px;
+	left: 50%;
+	margin-left: -615px;
+	border-radius : 15px;
+	background-color: #909090;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#clus
+{
+	margin: 15px;
+	width : 1200px;
+}
+
+.actions
+{
+	position: absolute;
+	background-color: #909090;
+	width : 140px;
+	top : 260px;
+	left: 50%;
+	margin-left: -800px;
+	border-radius : 15px;
+	background-color: #909090;
+	box-shadow: 13px 13px 12px #000;
+}
+
+
+#action
+{
+	position :relative;
+	margin : 10px;
+	height : 70px;
+	width : 70px;
+	left :50%;
+	margin-left: -35px;
+
+}
+
+#towel
+{
+	position :relative;
+	margin-top:-10px;
+	width : 90px;
+	left : 50%;
+	margin-left: -45px;
+}
+
+#book
+{
+	position :relative;
+	margin: 20px;
+	width : 100px;
+	left :50%;
+	margin-left: -50px;
+}
+
+#hidden
+{
+	visibility: hidden;
+	position :relative;
+	height : 107px;
+	width : 90px;
+	left :50%;
+	margin-left: -50px;
+	margin: 15px;
+
+}
+
+.wall
+{
+	position :relative;
+	margin :10px;
+	height : 72px;
+	width : 120px;
+	left :50%;
+	margin-left : -57px;
+	background-image: url(ressources/brick.jpg);
+
+}
+.right
+{
+	position: absolute;
+	background-color: #909090;
+	width : 140px;
+	top : 260px;
+	left: 50%;
+	margin-left: 660px;
+	border-radius : 15px;
+	background-color: #909090;
+	box-shadow: 13px 13px 12px #000;
+}
+
+.input
+{
+	width:510px;
+	height:30px;
+}
+
+.button
+{
+	font-size: 30px;
+	width:100px;
+	height:30px;
+}
+.ask
+{
+	position: absolute;
+	width : 700px;
+	top : 870px;
+	left: 50%;
+	margin-left: -970px;
+	border-radius : 15px;
+	box-shadow: 13px 13px 12px #000;
+	background-color: #83ff83;
+}

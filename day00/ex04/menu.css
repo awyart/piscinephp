@@ -1,0 +1,47 @@
+#menu, #menu ul    
+{
+    margin : 0;
+    padding :0;
+    list-style : none;
+    line-height : 50px;
+    text-align : left;
+}
+
+#menu
+{
+    font-family : Georgia;
+    font-size : 50px;
+}
+
+#menu a
+{
+    display : block;
+    padding : 0;
+    background : blue;     
+    color : orange;
+    text-decoration : none;
+    width : 250px;
+}
+
+#menu li
+{
+    float: left;
+    border-right: 2px solid gold;
+}
+
+#menu li ul
+{
+    position :absolute;
+    width: 500px;
+}
+
+#menu li ul li
+{
+    border-top:2px solid red;
+}
+
+#menu li ul ul 
+{
+    margin    : 0px 0 0 255px ;
+    border-left     : 2px solid white;  
+}
