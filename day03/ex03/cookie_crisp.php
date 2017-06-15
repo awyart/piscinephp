@@ -1,13 +1,22 @@
 <?php
 if ($_GET["action"] === "set")
+	if ($_GET["name"] && $_GET["value"])
+	{
 	setcookie($_GET["name"], $_GET["value"]);
+	}
 else if ($_GET["action"] === "get")
 {
-	echo $_COOKIE[$GET_NAME] ."\n";
+	if ($_GET["name"] && $_COOKIE[$_GET["name"]] && !$_GET["value"])
+	{
+		echo $_COOKIE[$_GET["name"]] ."\n";
+	}
 }
 else if ($_GET["action"] === "del")
 {
-	setcookie($_GET["name"], '', 1);
+	if ($_GET['name'] && !$_GET['value'])
+	{
+		setcookie($_GET["name"], "", 1);
+	}
 }
 	
 ?>
