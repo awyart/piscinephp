@@ -8,7 +8,8 @@ if ($_GET["submit"] === "OK")
 	}
 	else
 	{
-		setcookie($_GET["login"], $_GET["passwd"], time() + 3600);
+		$_SESSION["login"] = $_GET["login"];
+		$_SESSION["passwd"] = $_GET["passwd"];
 	}
 }
 //	curl -v -c cook.txt 'http://e2r10p2.42.fr:8080/j04/ex00/index.php'
@@ -21,7 +22,7 @@ if ($_GET["submit"] === "OK")
 <form method="get">
 	Identifiant: <input type="text" name ="login" value="" />
 	<BR />
-	Mot de passe: <input type="password"/ name ="passwd">
+	Mot de passe: <input type="password" name ="passwd" value =""/>
 	<input class="button" type="submit" name="submit" value="OK"/>
 </form>
 </body></html>
