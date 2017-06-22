@@ -4,15 +4,15 @@ class Jaime extends Lannister
 {
 	public function sleep_with($sbdy)
 	{
-		if ($sbdy.class ==same && $sbdy == cersei)
+		if ($sbdy instanceof Cersei)
 		{
 			return "With pleasure, but only in a tower in Winterfell, then.\n"; 
 		}
-		else if ($sbdy.class == same)
+		else if ($sbdy instanceof Tyrion)
 		{
 			return "Not even if I'm drunk !\n";
 		}
-		else
+		else if ($sbdy instanceof Sansa)
 		{
 			return "Let's do this\n";
 		}
