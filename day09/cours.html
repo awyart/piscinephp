@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+	<title> Javascript</title>
+	</head>
+<body>
+	<span onclick="alert('toto');"> Hello World</span>
+	<script>
+		/*var test;
+
+		test = 42;
+
+		console.debug(42);
+
+		function my_funct()
+		{
+			var toto;
+			toto = 'bonjour';
+			console.debug(toto);
+		}
+		my_funct();*/
+
+		var tab = new Array('tomate', 'salade', 'pomme de terre');
+
+		for (t in tab)
+		{
+			console.debug(t);
+		}
+
+		//alert('toto');
+		//console.log('hello world');
+	</script>
+</body>
+</html>
+
+
+		AJAX
+dans <head><script src="//code.jquery.com/jquery-1.11.0.min.js"></script></head>
+<body>
+	<span id ="my_span">Try_me ! </span>
+	<script>
+	$(document).ready(function()
+	{
+		$('my_span').click(function()
+		{
+			$.get('test.php', function(data, status){
+				alert("Data: " + data + "\nStatus: " + status);
+			})
+		});
+	});
+</script>
+</body>
