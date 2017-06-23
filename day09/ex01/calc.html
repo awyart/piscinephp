@@ -2,20 +2,108 @@
 <html>
 	<head>
 	<title> CALCUL CE TRUC</title>
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <style></style>
-    <script>
+	    <style>
+      input.textbox1
+      {
+        background-color: rgba(0,0,255,0.1);
+        border-radius : 50%;
+        margin: 10vw;
+        width: 20vw;
+        height: 10vw;
+        text-align: center;
+        font-size: 5vw;
+      }
+      select.slt
+      {
+        background-color: rgba(0,0,255,0.1);
+        border-radius : 100%;
+        margin: 1vw;
         
-        setInterval("alert('Please, use me...')", 30000);
-        parseInt(
-             event.preventDefault();
-             Number(
-                !numIsValid(
-    </script>
+        width: 5vw;
+        height: 2vw;
+        text-align: center;
+      }
+    </style>
+    <script>
+    setInterval("alert('Please, use me...')", 30000);
+
+    function docalc()
+    {
+        var left = document.getElementById("left").value;
+        var right = document.getElementById("right").value;
+        var op = document.getElementById("op");
+        var ope = op.options[op.selectedIndex].value;
+        var res;
+
+        if (Number(left) < 0)
+         {
+            alert("Error :(");
+            return;
+         }
+        if (ope == "moins")
+        {
+          res = Number(left) - Number(right);
+          alert(res);
+          console.log(res);
+        }
+        else if (ope == "plus")
+        {
+          res = Number(left) + Number(right);
+          alert(res);
+          console.log(res);
+        }
+        else if (ope == "mult")
+        {
+          res = Number(left) * Number(right);
+          alert(res);
+          console.log(res);
+        }
+        else if (ope == "div")
+        {
+          if (Number(right) == 0)
+          {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+          }
+          else
+          {
+             res = Number(left) / Number(right);
+             alert(res);
+             console.log(res);
+          }
+        }
+        else if (ope == "mod")
+        {
+          if (Number(right) == 0)
+          {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+          }
+          else
+          {
+             res = Number(left) / Number(right);
+             alert(res);
+             console.log(res);
+          }
+        }
+    }
+   
+</script>
+
 	</head>
-<body>
+<body style="background-color: pink">
+
+<input class="textbox1" type="text" id="left" autofocus>
+
+<select class="slt" id="op">
+  <option value="plus">+</option>
+  <option value="moins">-</option>
+  <option value="div" select="selected">/</option>
+  <option value="mult">*</option>
+  <option value="mod">%</option>
+</select>
+<input class="textbox1" type="text" id="right" value="">
+<input type="submit" value="Try me!" id="bouton" onclick="docalc()">
+
 </body>
 </html>

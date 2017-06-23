@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+	<title> SOUFFLE DANS LE BALLON</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <style>
+		div.balloon
+		{
+			width: 200px;
+			height:200px;
+			background-color:red;
+			border-radius: 50%;
+		}
+	</style>
+    <script>
+        var size = 200;
+        var balloon;
+        $(document).ready(function()
+        {
+            balloon = $('#balloon');
+            balloon.click(balloonClick);
+            balloon.mouseleave(balloonMouse);
+        })
+
+        function balloonMouse()
+        {
+            size -= 5;
+            if (size < 200)
+            {
+                size = 200;
+            }
+            balloonRefresh();
+        }
+
+        function balloonClick()
+        {
+            size += 10;
+            if (size > 420)
+            {
+                size = 200;
+            }
+            balloonRefresh();
+        }
+
+        function balloonRefresh()
+        {
+            balloon.css('height', size);
+            balloon.css('width', size);
+        }
+        </script>
+	</head>
+<body>
+	<div class ="balloon" id ="balloon">
+	</div>
+	</body>
+</html>
