@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="./todo.js"></script>
+    <title> LISTE2TRUCS</title>
+       <style>
+        .bloc
+        {
+            display: table;
+            position: absolute;
+            height: 80%;
+            width: 100%;
+        }
+
+        .contenant
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .container
+        {
+            margin-left: 30%;
+            margin-right: 30%;
+            vertical-align: center;
+            border-radius: 12px;
+            border: 2px solid red ;
+        }
+
+        h1
+        {
+            text-align : center;
+            margin: 10px;
+            cursor: default;    
+        }
+        #new
+        {
+            margin-right: 30%;
+            margin-left: 30%;
+            background-color: rgba(255,0,0,0.1);
+            width: 40%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .bouton
+        {
+            background-color: rgba(255,0,0,0.1);
+            border-radius:10%;
+        }
+        </style>
+
+    </head>
+    <body style="background-color:pink;">
+        <h1><div class="bloc">
+            <div class="contenant">
+                <div class="container" id="ft_list">
+                    <input class ="bouton" id="new" type="submit" value="new">
+                </div>
+            </div>
+        </div></h1>
+
+    </body>
+</html>

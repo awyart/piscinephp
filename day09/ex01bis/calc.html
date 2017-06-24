@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+	<title> CALCUL CE TRUC</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	    <style>
+      input.textbox1
+      {
+        background-color: rgba(0,0,255,0.1);
+        border-radius : 50%;
+        margin: 10vw;
+        width: 20vw;
+        height: 10vw;
+        text-align: center;
+        font-size: 5vw;
+      }
+      select.slt
+      {
+        background-color: rgba(0,0,255,0.1);
+        border-radius : 100%;
+        margin: 1vw;
+        
+        width: 5vw;
+        height: 2vw;
+        text-align: center;
+      }
+    </style>
+    <script>
+        var left;
+        var right;
+        var op;
+        var bouton;
+
+        $(document).ready(function()
+        {
+            form = $('#form');
+            left = $('#left');
+            right = $('#right');
+            op = $('#op');
+            form.submit(submit);
+            setInterval("alert('Please, use me...')", 30000);
+        })
+
+        function submit(test)
+        {
+            test.preventDefault();
+            var lefta = Number(left.val());
+            var righta = Number(right.val());
+            var res = 0;
+            if (lefta < 0)
+             {
+                alert("Error :(");
+                return;
+             }
+            if (op.val() == "moins")
+            {
+              res = lefta - righta;
+              alert(res);
+              console.log(res);
+            }
+            else if (op.val() == "plus")
+            {
+              res = lefta + righta;
+              alert(res);
+              console.log(res);
+            }
+            else if (op.val() == "mult")
+            {
+              res = lefta * righta;
+              alert(res);
+              console.log(res);
+            }
+            else if (op.val() == "div")
+            {
+              if (righta == 0)
+              {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+              }
+              else
+              {
+                 res = lefta / righta;
+                 alert(res);
+                 console.log(res);
+              }
+            }
+            else if (op.val() == "mod")
+            {
+              if (righta == 0)
+              {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+              }
+              else
+              {
+                 res = lefta / righta;
+                 alert(res);
+                 console.log(res);
+              }
+            }
+          }
+   
+</script>
+
+	</head>
+<body style="background-color: pink">
+<form  id="form" action ="">
+  <input class="textbox1" type="text" id="left" autofocus>
+
+  <select class="slt" id="op">
+    <option value="plus">+</option>
+    <option value="moins">-</option>
+    <option value="div" select="selected">/</option>
+    <option value="mult">*</option>
+    <option value="mod">%</option>
+  </select>
+  <input class="textbox1" type="text" id="right" value="">
+  <input type="submit" value="Try me!" id="submit">
+</form>
+</body>
+</html>

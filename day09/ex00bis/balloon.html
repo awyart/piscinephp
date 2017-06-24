@@ -32,7 +32,8 @@
             {
                 size = 200;
             }
-            balloonRefresh();
+            balloon.css('height', size);
+            balloon.css('width', size);
         }
 
         function balloonClick()
@@ -42,11 +43,6 @@
             {
                 size = 200;
             }
-            balloonRefresh();
-        }
-
-        function balloonRefresh()
-        {
             balloon.css('height', size);
             balloon.css('width', size);
         }

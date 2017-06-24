@@ -22,7 +22,8 @@
             {
                 size = 200;
             }
-            balloonRefresh();
+            balloon.style.height = size + 'px';
+            balloon.style.width = size + 'px';
         }
 
         function balloonClick()
@@ -32,12 +33,13 @@
             {
                 size = 200;
             }
-            balloonRefresh();
+            balloon.style.height = size + 'px';
+            balloon.style.width = size + 'px';
         }
         </script>
 	</head>
 <body>
-	<div class ="balloon" id ="balloon" onclick="balloonclick()">
+	<div class ="balloon" id ="balloon" onclick="balloonclick()" onmouseleave="ballonMouse()">
 	</div>
 	</body>
 </html>
