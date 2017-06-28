@@ -37,7 +37,7 @@ $(window).unload(function(){
 function newTodo()
 {
     var todo = prompt("Tu as la merveilleuse possibilite de realiser tes reves, mais quel est ton prochain reve ?", '');
-    if (todo !== '')
+    if (todo !== '' && todo)
     {
         addTodo(todo);
     }

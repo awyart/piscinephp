@@ -2,19 +2,17 @@
 
 class Tyrion extends Lannister
 {
-	public function sleep_with($sbdy)
+	public function sleepWith($sbdy)
 	{
-		if ($sbdy instanceof Cersei)
+		if ($sbdy instanceof Lannister)
 		{
-			return "Not even if I'm drunk !\n"; 
+			print("Not even if I'm drunk !\n");
+			return;
 		}
-		else if ($sbdy instanceof Jaime)
+		else
 		{
-			return "Not even if I'm drunk !\n";
-		}
-		else if ($sbdy instanceof Sansa)
-		{
-			return "Let's do this\n";
+			print("Let's do this\n");
+			return;
 		}
 	}
 }

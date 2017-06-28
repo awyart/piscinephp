@@ -50,7 +50,7 @@
             var lefta = Number(left.val());
             var righta = Number(right.val());
             var res = 0;
-            if (lefta < 0)
+            if (lefta < 0 || righta < 0 || Math.round(Number(lefta)) != lefta || Math.round(Number(righta)) != righta )
              {
                 alert("Error :(");
                 return;

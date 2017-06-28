@@ -35,7 +35,7 @@
         var ope = op.options[op.selectedIndex].value;
         var res;
 
-        if (Number(left) < 0)
+        if (Number(left) < 0 || Number(right) < 0 || Math.round(Number(left)) != left || Math.round(Number(right)) != right )
          {
             alert("Error :(");
             return;

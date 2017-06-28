@@ -1,4 +1,4 @@
 <?php
 session_start();
-$_SESSION["logued_on_us"] = "";
+$_SESSION["loggued_on_user"] = "";
 ?>

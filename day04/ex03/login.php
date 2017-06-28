@@ -1,12 +1,16 @@
 <?php
-session_start();
 
-if ($_POST["login"] && $_POST["oldpw"] && $_POST["newpw"] && $_POST["submit"] === "OK")
+session_start();
+require('auth.php');
+
+if ($_GET["login"] && $_GET["passwd"] && auth($_GET["login"], $_GET["passwd"]))
 {
 	$_SESSION["loggued_on_user"] = $_GET["login"];
 	echo "OK\n";
 }
+else
 {
 	$_SESSION["loggued_on_user"] = "";
 	echo "ERROR\n";
 }
+?>

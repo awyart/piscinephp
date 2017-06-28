@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Connexion</title>
+	<link rel="stylesheet" type="text/css" href="./connexion.css">
+</head>
+<body  style= "background-image:url(http://www.arcturius.org/chroniques/wp-content/uploads/2015/04/Flat-Ocean.jpeg)">
+<form method="post" action = "./modifinfoadmin.php" class="box">
+<h1>
+	login:  <input class ="textbox2" type="text" name ="login" value = ""/>
+	<br />
+	Nom <input class ="textbox2" type="text" name ="nom" value = ""/>
+	<br />
+	Prenom: <input class ="textbox2" type="text" name ="prenom" value = ""/>
+	<br />
+	Adresse de livraison <input class ="textbox2" type="text" name ="address" value = ""/>
+	<input class="button" type="submit" name="submit" value="Modifier" style="color:white"/>
+	</h1>
+	</form>
+<form method="post" action="./index.php">
+	<input class="button1" type="submit" name="submit" value="Page d'accueil" style="color:white">
+</form>
+<form method="post" action="./deleteadmin.php">
+	<h1>login:  <input class ="textbox2" type="text" name ="login" value = ""/></h1>
+	<br />
+	<input class="button" type="submit" name="submit" value="Supprimer le compte" style="color:white">
+</form>
+</body>
+</html>

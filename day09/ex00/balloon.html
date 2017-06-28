@@ -11,35 +11,65 @@
 			border-radius: 50%;
 		}
 	</style>
+    
+	</head>
+<body>
+	<div class ="balloon" id ="balloon" onclick="balloonClick()" onmouseleave="balloonMouse()">
     <script>
         var size = 200;
         var balloon = document.getElementById("balloon");
-       
+        var i = 0;
+
         function balloonMouse()
         {
             size -= 5;
-            if (size < 200)
+            i = i - 1;
+            if (size <= 200)
             {
+                i = 0;
                 size = 200;
             }
             balloon.style.height = size + 'px';
             balloon.style.width = size + 'px';
+            if (i % 3 == 0)
+            {
+                balloon.style.backgroundColor = 'red';
+            }
+            else if (i % 3 == 1)
+            {
+                balloon.style.backgroundColor = 'green';
+            }
+            else
+            {
+                balloon.style.backgroundColor= 'blue';
+            }
         }
 
         function balloonClick()
         {
-            balloonsize += 10;
-            if (size > 420)
+            size += 10;
+            i = i + 1;
+            if (size >= 420)
             {
+                i = 0;
                 size = 200;
             }
             balloon.style.height = size + 'px';
             balloon.style.width = size + 'px';
+            if (i % 3 == 1)
+            {
+                balloon.style.backgroundColor = "green";
+            }
+            else if (i % 3 == 2)
+            {
+                balloon.style.backgroundColor = "blue";
+            }
+            else 
+            {
+                balloon.style.backgroundColor = "red";
+            }
         }
         </script>
-	</head>
-<body>
-	<div class ="balloon" id ="balloon" onclick="balloonclick()" onmouseleave="ballonMouse()">
 	</div>
 	</body>
 </html>

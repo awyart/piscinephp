@@ -18,6 +18,7 @@
     <script>
         var size = 200;
         var balloon;
+        var i = 0;
         $(document).ready(function()
         {
             balloon = $('#balloon');
@@ -28,23 +29,52 @@
         function balloonMouse()
         {
             size -= 5;
-            if (size < 200)
+            i--;
+            if (size <= 200)
             {
+                i = 0;
                 size = 200;
             }
             balloon.css('height', size);
             balloon.css('width', size);
+            if (i % 3 == 0)
+            {
+                balloon.css('background-color', 'red');
+            }
+            else if (i % 3 == 1)
+            {
+                balloon.css('background-color', 'green');
+            }
+            else
+            {
+                balloon.css('background-color', 'blue');
+            }
+
         }
 
         function balloonClick()
         {
             size += 10;
-            if (size > 420)
+            i++;
+            if (size >= 420)
             {
+                i = 0;
                 size = 200;
             }
             balloon.css('height', size);
             balloon.css('width', size);
+            if (i % 3 == 0)
+            {
+                balloon.css('background-color', 'red');
+            }
+            else if (i % 3 == 1)
+            {
+                balloon.css('background-color', 'green');
+            }
+            else
+            {
+                balloon.css('background-color', 'blue');
+            }
         }
         </script>
 	</head>

@@ -1,94 +1,116 @@
-h1
+caption
 {
-	color :blue;
-	font-size: 1.6vw;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 0px;
+font-size:3vw;
+color:white;
 }
 
-h2 
+td 
 {
-	color :white;
-	font-size: 1.6vw;
-	font-weight: normal;
-	text-align: center;
-	margin-top: 35px;
+width: 1%;
+height:2px;
+text-align:center;
 }
 
-h4 
+sub 
 {
-	color :152E8A;
-	font-size: 0.8vw;
-	font-weight: normal;
-	text-align: right;
-	margin-top: 0px;
+font-size:1.2vw;
 }
 
-h3 
+sup 
 {
-	color :blue;
-	font-size: 1vw;
-	font-weight: normal;
-	text-align: left;
-	margin-top: 0px;
+font-size:1.2vw;
 }
 
-.elmt
+body
 {
-	float: left;
-	width:5%;
-	height: 90px; 
-	border: 2px inset;
-	border-color: black;
+background-image:url("http://physiquereussite.fr/wp-content/uploads/2015/11/fotolia_49371695_m.jpg");
 }
 
-.elmt1
+.elem_font
 {
-	float: left;
-	width:5%;
-	height: 90px; 
-	border: 2px dotted;
-	border-color: black;
+font-size:1.2vw;
 }
 
-.elmt2
+.nonmetals
 {
-	float: left;
-	width:5%;
-	height: 90px; 
-	border: 2px dashed;
-	border-color: black;
+font-size:1vw;
+background-color:#F7F14B;
+border:solid 1px black;
 }
 
-.head
+.metalloids
 {
-	float: left;
-	width:5%;
-	height:90px; 
-	border: 2px solid;
-	border-color: 050E2F;
+font-size:1vw;
+background-color:#C7C7F7;
+border:solid 1px black;
+}
+.gazes_nbl
+{
+font-size:1vw; background-color: #FF6699; border:solid 1px black;
 }
 
-.empty
+.alkali_metal
 {
-	visibility: hidden;
-	float: left;
-	width: 5%;
-	height: 90px; 
-	border: 2px solid red;
+font-size:1vw;
+background-color:#FB497E;
+border:solid 1px black;
 }
 
-.saut1 
+.alkaline_metal
 {
-	float: left;
-	width:100%;
-	height: 20px; 
+font-size:1vw;
+background-color: #F7F14B;
+border:solid 1px black;
 }
 
-.saut2 
+.halogenes
 {
-	float: left;
-	width:100%;
-	height: 2px; 
+font-size:1vw;
+background-color: #DEFF00;
+border:solid 1px black;
+}
+
+.transition_metal
+{
+font-size:1vw;
+background-color: #FAA3A3;
+border:solid 1px black;
+}
+
+.lanthanoids
+{
+font-size:1vw;
+background-color: #CC2A48;
+border:solid 1px black;
+}
+
+.actinoids
+{
+font-size:1vw;
+background-color: #DB59E9;
+border:solid 1px black;
+}
+
+.inconnu
+{
+font-size:1vw;
+background-color: #DDD8E3;
+border:solid 1px black;
+}
+
+.other_mtls
+{
+font-size:1vw;
+background-color: #A0A0A0;
+border:solid 1px black;
+}
+
+.subd
+{
+text-align:left;
+font-size:1.1vw;
+}
+.supd
+{
+text-align:right; font-size:1.1vw;
 }

@@ -1,42 +1,46 @@
 <?php
 
-function ft_err(void)
+function ft_err()
 {
     echo "ERROR\n";
-    return (0);
+    return ;
 }
-
-if ($_GET["submit"] === "OK")
+if ($_POST["submit"] && $_POST["submit"] === "OK" && ($_POST["login"]) && ($_POST["passwd"]))
 {
-	if (!$_GET["login"] || !$_GET["passwd"])
+	if (!(file_exists("../htdocs")))
 	{
-		if (!(@file_exists("../private"))
+		mkdir("../htdocs");
+	}
+	if (!(file_exists("../htdocs/private")))
+	{
+		mkdir("../htdocs/private");
+	}
+	$fd = fopen("../htdocs/private/passwd", 'w');
+	$pass = unserialize(file_get_contents("../htdocs/private/passwd"));
+	if ($pass)
+	{
+		$test = 0;
+		foreach ($pass as $key => $elem)
 		{
-			@mkdir("../private");
-		}
-		$fd =fopen("../private/passwd", 'w');
-		$pass = unserialize(file_get_contents($fd));
-		if ($pass)
-		{
-			$test = 0;
-			foreach ($pass as $key => $elem)
-			{
-				if {$elem["login"] === $_POST["login"]
-					$test = 1;
-			}
+			if ($elem["login"] === $_POST["login"])
+				$test = 1;
 		}
 	}
-	if ($test === 0)
+	if ($test === 0 || !($test))
 	{
-		$tmp["login"]= $_POST["login"];
-		$tmp["passwd"] = hash("whirlpool", $_POST["passwd"]);
-		$account[] = $tmp;
-		@file_put_contents("../private/passwd", serialize($account));
+		$a["login"]= $_POST["login"];
+		$a["passwd"] = hash("whirlpool", $_POST["passwd"]);
+		$pass[] = $a;
+		file_put_contents("../htdocs/private/passwd", serialize($pass));
 		echo "OK\n";
 	}
 	else
+	{
 		ft_err();
+	}
 }
 else
+{
 	ft_err();
+}
 ?>
